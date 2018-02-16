@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function($) {
+    var tab = $('.nav'),
+        offset = tab.offset();
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > offset.top) {
+            tab.addClass('fixed');
+        } else {
+            tab.removeClass('fixed');
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="index-left">
+            <div id="header-logo">
+                <img src="img/Vivid-berry-logo001.png" id="pc-logo"><img src="img/Vivid-berry-logo001@2x.png" id="sp-logo"></div>
+            <div id="index-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i><div id="clearfix"></div>Home</a></li>
+                    <li><a href="about.html"><i class="fa fa-heart" aria-hidden="true"></i><div id="clearfix"></div>About</a></li>
+                    <li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i><div id="clearfix"></div>Onlineshop</a></li>
+                    <li><a href=""><i class="fa fa-coffee" aria-hidden="true"></i><div id="clearfix"></div>Blog</a></li>
+                    <li><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i><div id="clearfix"></div>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="index-right">
+            <div id="about-bland">
+                <div id="bland-vividberry">
+                <div id="about-bland-title"><h1>Bland Plofile</h1></div>
+<p>学生時代につくったブランド、モノクロストリートのTSUBACHA Mix +up MODE、カラフルポップなTSUBACHA POP♡BERRY に加え、来年仲間入り予定の60年代スタイルを意識した” Vivid Berry”。</p> <p>主にメインロゴのキッチュなイチゴのモチーフを使い、60年代当時の柄や、 ビビッドカラーを合わせた、少し毒っ気のあるレトロスタイルを提案。</p></div>
+<div id="about-me">
+<div id="about-bland-title"><h1>Designer Plofile</h1></div>
+<p>2014年大阪文化服装学院 スーパーデザイナー学科卒業</p>
+<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+<p>株式会社 BEBE 子供服デザイナー</p>
+<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+<p>フリーランス</p>
+<p>主に委託販売などの作家活動</p>
+<p>主な委託店舗は DOG OSAKA,never mind the XU,ヴィレッジバンガードなど</p>
+<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+<p>株式会社ブーフーウー　DTPデザイナー</p>
+<i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+<p>現在 フリーランスのWebデザイナー兼クリエイター</p>
+</div>
+</div>
+            <div id="footer">©Vivid Berry.</div>
+        </div>
+        <div id="clearfix"></div>
+    </div>
+</body>
+
+</html>

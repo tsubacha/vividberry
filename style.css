@@ -1,0 +1,411 @@
+/*--------------------------------------------------
+共通
+---------------------------------------------------*/
+
+
+/*　Webフォント */
+
+@font-face {
+
+    font-family: 'Mouse_Memoirs';
+    src: url('webfont/Mouse_Memoirs.woff') format('woff');
+}
+
+@font-face {
+
+    font-family: 'Crunchy';
+    src: url('webfont/Crunchy.woff') format('woff');
+}
+
+@font-face {
+
+    font-family: 'chogokuboso';
+    src: url('webfont/chogokuboso.woff') format('woff');
+}
+
+
+/*　Webフォント終わり */
+
+html {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #d8efba;
+    font-size: 18px;
+    /*font-family: 'chogokuboso';*/
+}
+
+h1,
+h2,
+h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Crunchy';
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+li {
+    font-family: 'Mouse_Memoirs';
+}
+
+div#clearfix {
+    clear: both;
+}
+
+div#container {
+    margin-top: 0;
+    background: #000000;
+    margin-bottom: 0;
+}
+
+div#index-left {
+    background: url(img/header-back0001.gif);
+}
+
+div#index-right {
+    margin: 0;
+}
+
+div#header-logo {
+    text-align: center;
+    padding: 20px 40px 10px 40px;
+}
+
+div#header-logo img {
+    width: 100%;
+}
+
+div#index-menu li a:hover {
+    background: #0000007a;
+}
+
+
+div#footer {
+    /* background: #8cc63f; */
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*--------------------------------------------------
+ディスプレイサイズ　1000px以上
+---------------------------------------------------*/
+
+@media screen and (min-width: 1000px) {
+    .fa {
+        font-size: 40px !important;
+        padding: 2px;
+    }
+    #sp-logo {
+        display: none;
+    }
+    div#container {
+        width: 1000px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    div#index-left {
+        width: 400px;
+        height: 768px;
+        float: left;
+        position: fixed;
+    }
+
+    div#index-menu {
+        background: #0000008a;
+    }
+    .fa-home,
+    .fa-heart,
+    .fa-shopping-cart,
+    .fa-coffee,
+    .fa-envelope-o {
+        display: none !important;
+    }
+    div#index-menu ul {
+        padding-right: 30px;
+        padding: 0;
+    }
+
+    div#index-menu li {
+        font-size: 1.5em;
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    div#index-menu a {
+        display: block;
+        text-decoration: none;
+        color: #d8efba;
+    }
+
+    div#index-right {
+        float: left;
+        margin-left: 400px;
+        width: 600px;
+        padding: 20px 50px;
+    }
+
+    .contents-box {
+        box-sizing: border-box;
+        width: 200px;
+        float: left;
+        height: 200px;
+    }
+
+    div#slider {
+        width: 600px;
+        height: 120px;
+        box-sizing: border-box;
+    }
+
+    div#box1 {
+        background: #000000;
+    }
+
+    div#box3 {
+        background: #000000;
+    }
+
+    div#box5 {
+        background: #000000;
+    }
+    .box-clip {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin: 20px;
+        overflow: hidden;
+    }
+
+    .box-clip h2 {
+        font-family: 'Crunchy';
+        letter-spacing: 0.1em;
+        font-size: 2em;
+    }
+
+    .box-clip p {
+        font-size: 12px;
+    }
+
+
+    div#box1-clip {
+        background: #8cc63f;
+        text-align: center;
+    }
+
+    div#box2-clip {
+        background: #000000;
+        overflow: hidden;
+        color: #d4ebb5;
+        text-align: center;
+    }
+
+    div#box2-clip p {
+        line-height: 0.8em;
+    }
+
+    div#box3-clip {
+        background: #8cc63f;
+        text-align: center;
+    }
+
+
+    div#box4-clip {
+        color: #d9f0bb;
+        text-align: center;
+    }
+
+    div#box5-clip {
+        background: #8cc63f;
+    }
+
+    div#box6-clip {
+        background: #000000;
+        text-align: center;
+        color: #daf1bc;
+    }
+}
+@media screen and (max-width: 480px) {
+    div#index-menu li a {
+        font-size: 1em;
+    }
+    body {
+        font-size: 18px;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 999px) {
+
+    .fa {
+        font-size: 3em !important;
+        padding: 2px;
+    }
+    div#header-logo {
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    #pc-logo {
+        display: none;
+    }
+    .fa-home,
+    .fa-heart,
+    .fa-shopping-cart,
+    .fa-coffee,
+    .fa-envelope-o {
+        font-size: 2em !important;
+        padding: 10px;
+    }
+    div#index-menu {
+        width: 100%;
+        background: #ffffffb3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+    div#index-menu ul {
+        padding: 0;
+        margin: 0;
+    }
+    div#index-menu li {
+        text-align: center;
+        width: 20%;
+        display: block;
+        float: left;
+    }
+    div#index-menu li a {
+
+        display: block;
+        text-decoration: none;
+        color: #000000;
+
+        height: 90px;
+    }
+    div#index-menu li a:hover {
+        display: block;
+        background: #0000007a;
+        color: #ffffff;
+    }
+    div#container {
+        width: 100%;
+    }
+    div#index-left {
+        width: 100%;
+        float: none;
+        background: url(img/header-back0001.gif);
+        padding-top: 100px;
+    }
+    div#index-right {
+        width: 100%;
+        float: none;
+    }
+    div#index-right {
+        width: 100%;
+        float: none;
+    }
+    div#box1 {
+        display: none;
+    }
+    div#box2-clip {
+        background: #000000;
+        overflow: hidden;
+        color: #d4ebb5;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    div#box3 {
+        background: #000000;
+    }
+    div#box3-clip {
+        background: #8cc63f;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 100px;
+    }
+    div#box4-clip {
+        color: #d9f0bb;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+    div#box5 {
+        display: none;
+    }
+    div#box6-clip {
+        background: #000000;
+        text-align: center;
+        color: #daf1bc;
+        padding-bottom: 100px;
+    }
+}
+
+
+
+div#footer {
+    color: white;
+    padding-top: 60px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'Crunchy';
+}
+
+
+
+
+/*--------------------------------------------------
+index
+---------------------------------------------------*/
+
+h2#index-follow-me {
+    color: #000000;
+}
+
+.index-sns-icon {
+    color: #000000;
+}
+
+
+
+
+/*--------------------------------------------------
+index
+---------------------------------------------------*/
+
+
+/*--------------------------------------------------
+about
+---------------------------------------------------*/
+
+
+i.fa.fa-arrow-circle-down {
+    font-size: 1em !important;
+}
+div#about-bland {
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+/*--------------------------------------------------
+about終了
+---------------------------------------------------*/
